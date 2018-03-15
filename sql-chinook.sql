@@ -27,15 +27,25 @@ FROM Invoice i
 GROUP BY i.BillingCountry
 
 -- 6. Provide a query that shows the invoices associated with each sales agent. The resultant table should include the Sales Agent's full name.
--- NO EMPLOYEE ID ON INVOICE?
+SELECT e.FirstName, e.LastName,  i.InvoiceId, c.CustomerId
+FROM Employee e
+JOIN Customer c
+ON e.EmployeeId = c.SupportRepId
+JOIN Invoice i 
+ON i.CustomerId = c.CustomerId
+WHERE e.Title = "Sales Support Agent"
+
 
 -- 7. Provide a query that shows the Invoice Total, Customer name, Country and Sale Agent name for all invoices and customers.
--- NO EMPLOYEE ID ON INVOICE?
-
-SELECT c.FirstName "First Name", c.LastName "Last Name", i.BillingCountry "Country", i.Total "Total"
-FROM Invoice i 
+SELECT e.FirstName || " " || e.LastName AS "Sales Agent", 
+c.FirstName || " " || c.LastName AS "Customer",
+i.BillingCountry AS "Country", i.Total
+FROM Employee e
 JOIN Customer c
-ON c.CustomerId = i.CustomerId
+ON e.EmployeeId = c.SupportRepId
+JOIN Invoice i 
+ON i.CustomerId = c.CustomerId
+WHERE e.Title = "Sales Support Agent"
 
 -- 8. How many Invoices were there in 2009 and 2011? What are the respective total sales for each of those years?
 SELECT COUNT(i.InvoiceDate) "SALES", substr(i.InvoiceDate, 1, 4) "YEAR"
