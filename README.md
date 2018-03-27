@@ -27,7 +27,11 @@ For each of the following exercises, provide the appropriate query. Everything f
 1. Using `MAX()` function, write a select statement to find the song with the longest duration. The result should display the song title and the duration.
 1. Modify the previous query to also display the title of the album.
 
-## Exercise 2: sql-chinook.sql
+## Exercise 2: Chinook ERD
+
+![Chinook ERD](https://github.com/EduardoDuQuesne/exercises-sql-queries/blob/master/chinook_erd/Chinook%20ERD.png)
+
+## Exercise 3: sql-chinook.sql
 
 ### Requirements
 Use the [Chinook Database](https://chinookdatabase.codeplex.com/) and the [DB Browser for SQLite](http://sqlitebrowser.org/) we downloaded in the ERD exercise.
