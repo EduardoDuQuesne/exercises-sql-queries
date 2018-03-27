@@ -1,6 +1,6 @@
 # Nashville Software School: SQL Exercises
 
-## Exercise 1: queries.sql
+## Exercise 1: Basic Queries
 ### Instructions
 
 1. Open up the database file in the *DB Browser for SQLite* application to see it
@@ -31,7 +31,7 @@ For each of the following exercises, provide the appropriate query. Everything f
 
 ![Chinook ERD](https://github.com/EduardoDuQuesne/exercises-sql-queries/blob/master/chinook_erd/Chinook%20ERD.png)
 
-## Exercise 3: sql-chinook.sql
+## Exercise 3: Chinook Queries
 
 ### Requirements
 Use the [Chinook Database](https://chinookdatabase.codeplex.com/) and the [DB Browser for SQLite](http://sqlitebrowser.org/) we downloaded in the ERD exercise.
