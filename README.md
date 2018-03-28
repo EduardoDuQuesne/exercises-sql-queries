@@ -29,7 +29,7 @@ For each of the following exercises, provide the appropriate query. Everything f
 
 ## Exercise 2: Chinook ERD
 
-![Chinook ERD](https://github.com/EduardoDuQuesne/exercises-sql-queries/blob/master/chinook_erd/Chinook%20ERD.png)
+![Chinook ERD](https://github.com/EduardoDuQuesne/exercises-sql-queries/blob/master/chinook_erd/Chinook_ERD.png)
 
 ## Exercise 3: Chinook Queries
 
